@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Africa Elections Map</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery-jvectormap.css" type="text/css" media="screen"/>
+
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.jvectormap.min.js"></script>
+    <script src="js/jquery-jvectormap.js"></script>
+     <script src="js/africa-jvectormap.js"></script>
+</head>
+<body>
+    <div class="container" id="africa-map">
+        <h1>
+            <center>Elections Afrique (Situation)</center>
+        </h1>
+    </div>
+    <script type="text/javascript">
+
+        $(function(){
+            var gdpData = {
+              "AF": 16.63,
+              "AL": 11.58,
+              "DZ": 158.97,
+              "CD": 23.94,
+            };
+            $('#africa-map').vectorMap({map:'africa_mill',
+                series: {
+                regions: [{
+                  values: gdpData,
+                  scale: ['#C8EEFF', '#0071A4'],
+                  normalizeFunction: 'polynomial'
+                }]
+              },
+              onRegionTipShow: function(e, el, code){
+                el.html(el.html()+' (GDP - '+gdpData[code]+')');
+              }
+            });
+        });
+    </script>
+    <script src="js/controllers.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/filters.js"></script>
+</body>
+</html>
