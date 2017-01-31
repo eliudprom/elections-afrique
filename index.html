@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Africa Elections Map</title>
-    <link rel="stylesheet" href="css/jquery-jvectormap.css" type="text/css" media="screen"/>
-
-    <link rel="stylesheet" href="css/main.css"/>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.jvectormap.min.js"></script>
-    <script src="js/jquery-jvectormap.js"></script>
-    <script src="js/africa-jvectormap.js"></script>
+<head>
+  <title>Africa Elections Calendar(Map)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css" type="text/css" media="screen"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src="js/jquery.jvectormap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.js"></script>
+  <script src="js/africa-map.js"></script>
 </head>
 <body>
-    <div class="container" id="africa-map">
-        <h1>
-            <center>Elections Calendar (Situation)</center>
-        </h1>
-    </div>
-    <script type="text/javascript">
-
-        $(function(){
-            $('#africa-map').vectorMap({
-              map: 'africa_mill',
-              backgroundColor : ['#50CC82'],
-              zoomOnScroll : false,
-              markerStyle : {
-                initial: {
-                  fill: '#F8E23B',
-                  stroke: '#383f47'
-                }
-              },
-              markers : [
+  <H1><center>Africa Elections Calendar</center></H1>
+  <div id="africa-map" style="width: 100%; height: 400px"></div>
+  <script>
+    $(function(){
+  $('#africa-map').vectorMap({
+    map: 'africa_mill',
+    backgroundColor : ['#50CC82'],
+    normalizeFunction: 'polynomial',
+    hoverOpacity: 0.7,
+    hoverColor: false,
+    markerStyle: {
+      initial: {
+        fill: '#F8E23B',
+        stroke: '#383f47'
+      }
+    },
+    backgroundColor: '#383f47',
+    markers : [
                 {
                   latLng: [-4.316666667, 15.3], //DRC
                   name: 'probably in 2017; mysterious forecast (worst case: Dec. 2018)'
@@ -162,8 +156,11 @@
                   name: 'no elections planned'
                 },
               ]
-            });
-        });
-    </script>
+  });
+});
+  </script>
+  <footer>
+    <center><i>Developed by <a href="http://github.com/hero0">hero0</a></i></center>
+  </footer>
 </body>
 </html>
