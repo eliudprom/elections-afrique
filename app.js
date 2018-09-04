@@ -67,7 +67,7 @@ new Vue({
 			year: [
 				{
 		            latLng: [-4.316666667, 15.3], //DRC
-		            name: 'Probably in 2017; mysterious forecast (worst case: Dec. 2018)',
+		            name: 'No election in 2017; projected  (worst case: Dec. 2018)',
 		        },
 		        {
 		            latLng: [12.65, -8], //Mali
@@ -118,7 +118,7 @@ new Vue({
 		        },
 		        {
 		            latLng: [-17.81666667, 31.033333], //Zimbabwe
-		            name: 'no elections planned at the moment (dictatorship)'
+		            name: 'election  (2018)'
 		        },
 		        {
 		          	latLng: [-25.95, 32.583333], //Mozambique
