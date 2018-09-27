@@ -67,9 +67,10 @@ new Vue({
 			year: [
 				{
 		            latLng: [-4.316666667, 15.3], //DRC
-		            name: 'Preidential Election and Legistaltive December 23rd,2018',
+		            name: 'Preidential Election and Legistaltive December 23rd,2018'
 			    name: 'Presidental candidate: 21 candidate Confirmed'
-			    name:  'Legistative candidate: 15.355 candidated confirmed' 
+			    name: 'Preidential Election and Legistaltive December 23rd,2018'
+			    
 					
 		        },
 		        {
