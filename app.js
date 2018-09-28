@@ -12,11 +12,11 @@ new Vue({
 	            },
 	            {
 	              latLng: [-8.833333333, 13.216667], //Angola
-	              name: 'General election: most likely August 2017'
+	              name: 'General election: August 2018, Joa New president'
 	            },
 	            {
 	              latLng: [12.1, 15.033333], //Chad
-	              name: 'Parliamentary election, unknown date, 2017'
+	              name: 'Parliamentary election, 30th november, 2018'
 	            },
 	            {
 	              latLng: [0.383333333, 9.45], //Gabon
@@ -36,7 +36,7 @@ new Vue({
 	            },
 	            {
 	              latLng: [8.483333333, -13.233333], //Sierra Leone
-	              name: 'general election 2017'
+	              name: 'Parliament Election 31th December, 2018'
 	            },
 	            {
 	              latLng: [13.45, -16.566667], //Gambia
@@ -52,7 +52,7 @@ new Vue({
 	            },
 	            {
 	              latLng: [-18.91666667, 47.516667], //Madagascar
-	              name: 'legislative, possibly December 2017'
+	              name: 'Presidential election 12th December, 2018'
 	            },
 	            {
 	              latLng: [36.8, 10.183333], //Tunisia
@@ -67,11 +67,15 @@ new Vue({
 			year: [
 				{
 		            latLng: [-4.316666667, 15.3], //DRC
-		            name: 'Probably in 2017; mysterious forecast (worst case: Dec. 2018)',
+		            name: 'Preidential Election and Legistaltive December 23rd,2018'
+			    name: 'Presidental candidate: 21 candidate Confirmed'
+			    name: 'Preidential Election and Legistaltive December 23rd,2018'
+			    
+					
 		        },
 		        {
 		            latLng: [12.65, -8], //Mali
-		            name: 'presidential and legislative planned for 2018'
+		            name: 'presidential: 2018 with IBK relected. parliamentary: probably 18th noveber, 2018'
 		        },
 		        {
 		            latLng: [6.116666667, 1.216667], //Togo
@@ -118,7 +122,7 @@ new Vue({
 		        },
 		        {
 		            latLng: [-17.81666667, 31.033333], //Zimbabwe
-		            name: 'no elections planned at the moment (dictatorship)'
+		            name: 'Election were held on 30th july 2018 and The winner was Emmerson Mnangagwa'
 		        },
 		        {
 		          	latLng: [-25.95, 32.583333], //Mozambique
@@ -138,7 +142,7 @@ new Vue({
 		        },
 		        {
 		            latLng: [32.88333333, 13.166667], //Libye
-		            name: 'no elections planned'
+		            name: 'Presidentail and Council of deputies elections 10th december, 2018'
 		        },
 			]
 		}
